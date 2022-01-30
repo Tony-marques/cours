@@ -4,7 +4,7 @@
   "description": "![image](./assets/images/logo_js.png)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./Cours_JS/arrayMethods.js"
   },
   "keywords": [],
   "author": "",

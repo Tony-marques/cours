@@ -1,5 +1,5 @@
-// forEach(): itérer pour chaque item du tableau
-let arr = [1, 2, 3];
-arr.forEach((item, index) => {
-  console.log(item, index); // item: 1 2 3 // index 0 1 2
-});
+let arr = ["t", "e", "s", "t"];
+
+console.log(arr.slice(1, 3)); // e,s (copy from 1 to 3)
+
+console.log(arr.slice(-2)); // s,t (copy from -2 till the end)

@@ -93,7 +93,7 @@ console.log(user); // { id: 1, name: 'John' }
 ---
 
 ## 5. filter()
-
+- Souvent utilisé avec la méthode .includes()
 - La méthode find() recherche un seul (premier) élément qui rend la fonction true.
 - Si il y a plusieurs éléments à rechercher, il faut utiliser la méthode filter()
 

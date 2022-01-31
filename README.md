@@ -1,7 +1,5 @@
-![image](./assets/images/logo_js.png)
+![image](./assets/images/main-img.jpg)
 
-# Cours JavaScript
+# Les différents cours de développement web.
 
-- [La décomposition (destructuring)](./Cours_JS/decomposition.md)
-- [Les fonctions constructeur](./Cours_JS/fonctionConstructeur.md)
-- [Les méthodes sur les tableaux](./Cours_JS/ArrayMethods.md)
+- ## [JavaScript](./Cours/CoursJS/Cours_JS.md)

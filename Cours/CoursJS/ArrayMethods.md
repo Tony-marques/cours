@@ -1,6 +1,10 @@
 # Les méthodes sur les tableaux
+
 [Revenir en arrière](./Cours_JS.md)
-## 1. forEach()
+
+## 1 Méthodes pour itérer sur un tableau.
+
+## 1.1 forEach()
 
 - Permet d'itérer sur chaque item du tableau.
 
@@ -21,6 +25,39 @@ arr.forEach((item, index) => {
 
 ---
 
+### 1.2. map()
+
+- Crée un nouveau tableau avec les résultats de l'appel de la fonction fournie sur chaque élément du tableau.
+
+Syntaxe: arr.map((item, index, array) => {}):
+
+```js
+let arr = ["tony", "marques"];
+
+let length = arr.map((item, index, array) => {
+  console.log(index); // 0 1
+  return item.length;
+});
+
+console.log(length); // [ 4, 7 ]
+```
+
+---
+
+### 1.3. for of
+- créer une boucle qui fonctionne avec les itérables (tableau, objet, string etc...)
+```js
+const names = ["Tony", "Dorine", "Laura"];
+
+for (const name of names) {
+  console.log(name);
+  // => Tony
+  // => Dorine
+  // => Laura
+}
+```
+---
+---
 ## 2. slice()
 
 - Retourne un nouveau tableau entre start et end, end non compris.
@@ -93,6 +130,7 @@ console.log(user); // { id: 1, name: 'John' }
 ---
 
 ## 5. filter()
+
 - Souvent utilisé avec la méthode .includes()
 - La méthode find() recherche un seul (premier) élément qui rend la fonction true.
 - Si il y a plusieurs éléments à rechercher, il faut utiliser la méthode filter()
@@ -121,25 +159,6 @@ console.log(someUsers);
 
 ---
 
-## 6. map()
-
-- Crée un nouveau tableau avec les résultats de l'appel de la fonction fournie sur chaque élément du tableau.
-
-Syntaxe: arr.map((item, index, array) => {}):
-
-```js
-let arr = ["tony", "marques"];
-
-let length = arr.map((item, index, array) => {
-  console.log(index); // 0 1
-  return item.length;
-});
-
-console.log(length); // [ 4, 7 ]
-```
-
----
-
 ## 6. sort()
 
 - La méthode sort() trie le tableau selon la condition donnée
@@ -164,7 +183,7 @@ console.log(sort); // [1, 2, 3, 10, 11, 100, 105, 150]
 let arr = ["tony", "marques", "dorine", "walter"];
 
 let sort = arr.sort((a, b) => {
-  return a.localeCompare(b); 
+  return a.localeCompare(b);
   // de A à Z, sinon b.localeCompare(a) pour de Z à A
 });
 
@@ -183,9 +202,10 @@ Syntaxe: arr.reduce((accumulator, item, index, array) => {})
 let arr = [1, 2, 3, 4, 5];
 
 let result = arr.reduce((acc, item) => {
-  return acc + item
+  return acc + item;
 });
 
 console.log(result); // 15
 ```
+
 [Revenir en arrière](./Cours_JS.md)

@@ -62,4 +62,19 @@ console.log(name.split("o")); // Chaque "o" divise la chaîne.
 // => [ 'T', 'ny' ]
 ```
 ---
+
+## 7. substr()
+- La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain nombre de caractères après celui-ci.
+
+Syntaxe: split("paramètre")
+```js
+const name = 'Tony';
+
+console.log(name.substr(1, 2)); // => retourne à partir de l'index 1, 2 valeur
+// => "on"
+
+console.log(name.substr(2)); // à partir de l'index 2, retourne toute la suite
+// => "ny"
+```
+---
 [Revenir en arrière](./Cours_JS.md)

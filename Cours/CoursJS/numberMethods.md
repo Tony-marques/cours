@@ -34,3 +34,5 @@ console.log(number.toFixed(4)); // => 9.6560
 - Number() => retourne un nombre
 - parseInt() => retourne un entier ou nombre à virgule
 - parseFloat() => retourne un entier
+
+[Revenir en arrière](./Cours_JS.md)

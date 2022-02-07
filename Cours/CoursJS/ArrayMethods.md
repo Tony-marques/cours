@@ -44,8 +44,10 @@ console.log(length); // [ 4, 7 ]
 
 ---
 
-### 1.3. for of
+### 1.3. for ... of
+
 - créer une boucle qui fonctionne avec les itérables (tableau, objet, string etc...)
+
 ```js
 const names = ["Tony", "Dorine", "Laura"];
 
@@ -56,8 +58,28 @@ for (const name of names) {
   // => Laura
 }
 ```
+
 ---
+
+### 1.3.1 entries() avec la boucle for ... of
+
+- la fonction entries() sur une boucle for ... of permet de récupérer l'indice ET la valeur.
+
+```js
+const names = ["Tony", "Dorine", "Laura"];
+
+for (const [indice, name] of names.entries()) {
+  console.log(name);
+  // => 0 : Tony
+  // => 1 : Dorine
+  // => 2 : Laura
+}
+```
+
 ---
+
+---
+
 ## 2. slice()
 
 - Retourne un nouveau tableau entre start et end, end non compris.
